@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>업소용 주방용품 전문업체 도담주방</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('7471443c8c247ee510d8e425af2168e6');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '(주)도담주방 김창환 대표',
+        description: '주방용품 전문업체 도담주방입니다. ',
+        imageUrl:
+          'https://k.kakaocdn.net/14/dn/btrUap6aUl0/QK8UlY5Ya24mzECrUgLRgk/o.jpg',
+        link: {
+          mobileWebUrl: 'https://m.dodamkitchen.co.kr/',
+          webUrl: 'https://dodamkitchen.co.kr/',
+        },
+      },
+      social: {
+        likeCount: 좋아요 수, //99999가 최대입니다
+        commentCount: 댓글 수, //99999가 최대입니다
+        sharedCount: 공유 수, //99999가 최대입니다
+      },
+      buttons: [
+        {
+          title: '버튼1 글자',
+          link: {
+            mobileWebUrl: '클릭시 모바일 주소',
+            webUrl: '클릭시 PC 주소',
+          },
+        },
+      ],
+    })
+  }
+</script>
+  </body>
+</html>
